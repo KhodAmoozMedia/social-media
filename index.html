@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>خودآموز مدیا</title>
+    <link rel='shortcut icon' href='favicon/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" type="text/css">
+</head>
+<body>
+
+
+<style>
+
+
+    body {
+        margin: 0;
+        background: url('images/bg_body.jpg') repeat 0 0 transparent;
+    }
+
+    * {
+        font-family: iransans;
+        direction: rtl;
+        text-align: right;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'iransans';
+    url('fonts/IRANSansX-Regular.woff2') format('woff2');
+    url('fonts/IRANSansX-Regular.woff') format('woff');
+    url('fonts/IRANSansWeb.ttf')  format('truetype');
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+    }
+
+    p {
+        margin: 0
+    }
+
+    .content {
+        margin: 8%;
+        background-color: #fff;
+        padding: 3rem 1rem;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
+        border-radius: 10px;
+    }
+   
+   
+   
+    @media only screen and (max-width: 576px ) {
+        .login-holder {
+            padding: 0;
+        }
+
+        .content {
+            margin: 0;
+            box-shadow: unset;
+            border-radius: unset;
+        }
+    }
+
+    @media only screen and (max-width: 395px ) {
+        .content {
+            padding: 2rem 1rem
+        }
+    }
+
+    @media only screen and (max-width: 310px ) {
+        .content {
+            padding: 1.5rem .5rem
+        }
+    }
+
+</style>
+
+
+
+
+<style>
+
+    /*<!------------------global-style---------------->*/
+    body {
+        margin: 0;
+        background: url('images/bg_body.jpg') repeat 0 0 transparent;
+    }
+
+    @font-face {
+        font-family: 'iransans';
+    url('fonts/IRANSansX-Regular.woff2') format('woff2');
+    url('fonts/IRANSansX-Regular.woff') format('woff');
+    url('fonts/IRANSansWeb.ttf')  format('truetype');
+
+    }
+
+    * {
+        font-family: iransans;
+        direction: rtl;
+        text-align: right;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+    }
+
+    p {
+        margin: 0
+    }
+
+    .flex-display {
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: -o-flex;
+    }
+
+    .flex-wrap {
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    }
+
+    .align-items-center {
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+         
+
+    /*<!----------x--------global-style----------x------>*/
+
+
+</style>
+
+
+
+
+    <!-------------------features----------------->
+
+    <style>
+
+       
+
+       
+
+        #features {
+            width: 100%;
+            padding: 2rem 0;
+            background: #f3f3f3;
+        }
+
+        #feature-parent {
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%
+        }
+
+        .features-place {
+            margin: 1.7rem 1rem;
+            width: 10rem;
+            height: 16rem;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, .25);
+            margin: auto;
+            position: relative;
+            border: none !important;
+        }
+
+        .top-card {
+            width: 100%;
+            height: 40%;
+            background: #ffffff;
+            position: relative;
+            z-index: 50;
+        }
+
+        .wave-card {
+            position: absolute;
+            width: 12rem;
+            height: 11rem;
+            background: #fff;
+            top: -20px;
+            border-radius: 100%;
+            left: -16px;
+            animation: liquid 2s linear infinite;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, .2);
+            z-index: 1;
+        }
+
+        .bottom-card {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-mtn {
+            width: 80%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 38px;
+            color: #fff;
+            margin: 40px auto 0 auto;
+                        
+        }
+
+        .card-img {
+            width: 65%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: auto;
+            top: 20px
+
+        }
+
+        #features-title {
+            color: #212121;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 0 .5rem;
+            line-height: 29px;
+
+        }
+
+        @keyframes liquid {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media only screen and (max-width: 1155px ) {
+            #feature-parent {
+                padding: 0 8.1rem
+            }
+
+            .features-place {
+                margin: 1.7rem 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 940px ) {
+            #feature-parent {
+                padding: 0 2rem
+            }
+
+        }
+
+        @media only screen and (max-width: 767px ) {
+            #feature-parent {
+                padding: 0
+            }
+
+            .features-place {
+                margin: 1.7rem 1rem;
+            }
+        }
+
+    </style>
+
+
+<div class="container login-holder ">
+
+    <div class="row content  flex-wrap-reverse align-items-center ">
+
+      
+        <div id="features">
+
+              
+            <p id="features-title">خودآموز مدیا را در رسانه های زیر دنبال کنید 😃</p>
+    
+            <div id="feature-parent" class="flex-display">
+                <div class="features-place">
+                   <a style="cursor: pointer;" href="https://www.youtube.com/channel/UC4nHuECylWDFOcH0yjYDeUw"> 
+                    <div class="card">
+                        <div class="top-card">
+                            <img style="width:100%;" src="images/YouTube.svg" class="card-img">
+                        </div>
+                        <div class="wave-card"></div>
+                        <div class="bottom-card" style="background: #263238"><p style="background-color: #12181b;" class="card-mtn"> کانال یوتیوب </p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+    
+                <div class="features-place">
+                    <a style="cursor: pointer;" href="https://www.aparat.com/KhodAmooz_Media">
+                    <div class="card">
+                        <div class="top-card">
+                            <img src="images/aparat.svg" class="card-img">
+                        </div>
+                        <div class="wave-card"></div>
+                        <div class="bottom-card" style="background: #ED145B"><p style="margin-top: 51px ; background-color: #c60c49;" class="card-mtn">
+                                                   کانال آپارات</p></div>
+                    </div>
+                </a>
+                </div>
+    
+                <div class="features-place">
+                    <a style="cursor: pointer;" href="https://gap.im/KhodAmooz_Media">
+                    <div class="card">
+                        <div class="top-card">
+                            <img src="images/gap.png" class="card-img">
+                        </div>
+                        <div class="wave-card"></div>
+                        <div class="bottom-card" style="background: #651FFF"><p style=" background-color: #5e04da;" class="card-mtn">کانال گپ
+                           </p></div>
+                    </div>
+                </a>
+                </div>
+    
+                <div class="features-place">
+                    <a style="cursor: pointer;" href="https://eitaa.com/KhodAmooz_Media">
+                    <div class="card">
+                        <div class="top-card">
+                            <img src="images/eita.png" class="card-img">
+                        </div>
+                        <div class="wave-card"></div>
+                        <div class="bottom-card" style="background: #FF6D00;"><p style=" background-color: #d1600c;" class="card-mtn">کانال ایتا
+                            </p></div>
+                    </div>
+                </a>
+                </div>
+    
+                                   
+            </div>
+
+         
+        </div>
+
+        
+    </div>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
